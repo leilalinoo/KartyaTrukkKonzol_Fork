@@ -1,5 +1,6 @@
-package kartyatrukkkonzolon;
+package nezet;
 
+import modell.Pakli;
 import java.util.Scanner;
 
 public class KartyaTrukkKonzolon {
@@ -16,6 +17,7 @@ public class KartyaTrukkKonzolon {
             int oszlop = melyik();
             pakli2.kever(oszlop);
         }
+        
         pakli2.ezVolt();
     }
 
@@ -25,11 +27,19 @@ public class KartyaTrukkKonzolon {
         boolean jo;
         int oszlop;
         do {
-            System.out.print("melyik oszlop (1-3): ");
+            kiir("melyik oszlop (1-3): ");
             oszlop = sc.nextInt();
             jo = oszlop >= 1 && oszlop <= 3;
         } while (!jo);
         return oszlop;
+    }
+    
+    public static void kiir(String szoveg){
+        System.out.println(szoveg);
+    }
+    
+    public static void formazottanKiir(String szoveg){
+        System.out.printf("%-8s", szoveg);
     }
     
 
