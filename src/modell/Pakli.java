@@ -9,10 +9,14 @@ public class Pakli {
 
     public Pakli() {
         lapok = new Lap[22];
-        feltolt();
+        this.feltolt();
     }
 
-    public void feltolt() {
+    public Lap[] getLapok(){
+        return lapok;
+    }
+    
+    private void feltolt() {
         String[] szinek = {"P", "T", "Z", "M"};
         String[] ertekek = {"Ász", "Kir", "Fel", "X", "IX", "VIII"};
 

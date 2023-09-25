@@ -10,7 +10,6 @@ public class KartyaTrukkKonzolon {
 
     public static void main(String[] args) {
         Pakli pakli2 = new Pakli();
-        pakli2.feltolt();
         
         for (int i = 0; i < 3; i++) {
             pakli2.kirak();
